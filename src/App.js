@@ -25,8 +25,8 @@ import './App.css';
           <img src={item.images.large} className="image" alt="my image"/>
           <h3 key={i}>{item.name}</h3>
           <h4>{item.details}</h4>
-          <a href="https://api.spacexdata.com/v4/launchpads/`${item.launches[0]}'">launches1</a>
-          <a href="https://api.spacexdata.com/v4/launchpads/`${item.launches[0]}`">launches2</a>
+          <a href="https://api.spacexdata.com/v4/launchpads/{item.launches}">launches1</a>
+          <a href="https://api.spacexdata.com/v4/launchpads/{item.launches}">launches2</a>
           <a href="https://api.spacexdata.com/v4/launchpads/{item.launches[0]}">launches3</a>
           </div>
         })}
